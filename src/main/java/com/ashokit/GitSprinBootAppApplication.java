@@ -8,9 +8,14 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class GitSprinBootAppApplication {
 
 	public static void main(String[] args) {
-	ConfigurableApplicationContext run = SpringApplication.run(GitSprinBootAppApplication.class, args);
+	ConfigurableApplicationContext run =        SpringApplication.run(GitSprinBootAppApplication.class, args);
 	//changes for HTS-134
 	run.close();
 	}
+
+//HTS-200 related changes
+public void doProcess(){
+    //logic goes here
+}
 
 }
