@@ -6,11 +6,15 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class GitSprinBootAppApplication {
+
         privte Map<String, Object> cache = new HashMap<String, Object>();
+        private static final string REST_URL="https:www.equifax.com/getScores";
 
 	public static void main(String[] args) {
 	ConfigurableApplicationContext run =        SpringApplication.run(GitSprinBootAppApplication.class, args);
 	//changes for HTS-134
+    
+        int a=10;
 	run.close();
 	}
 
