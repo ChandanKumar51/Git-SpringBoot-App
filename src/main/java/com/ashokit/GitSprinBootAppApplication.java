@@ -6,6 +6,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class GitSprinBootAppApplication {
+
+        privte Map<String, Object> cache = new HashMap<String, Object>();
         private static final string REST_URL="https:www.equifax.com/getScores";
 
 	public static void main(String[] args) {
@@ -16,9 +18,14 @@ public class GitSprinBootAppApplication {
 	run.close();
 	}
 
-//HTS-200 related changes
-public void doProcess(){
-    //logic goes here
-}
+       //HTS-200 related changes
+       public void doProcess(){
+       //logic goes here
+     }
+
+        //HIS-301 changes
+        public void loadDataToCache(){
+           //logic
+     }
 
 }
